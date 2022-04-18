@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './_guards/auth.guard';
+import { TestErrorsComponent } from './errors/test-errors/test-errors.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +21,7 @@ const routes: Routes = [
       { path: 'messages', component: MessagesComponent },
     ]
   },
-
+  { path: 'errors', component: TestErrorsComponent },
   { path: '**', component: HomeComponent, pathMatch: 'full' }
 ];
 
