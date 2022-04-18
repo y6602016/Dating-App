@@ -25,10 +25,10 @@ export class ErrorInterceptor implements HttpInterceptor {
                 const modalStateErros = [];
                 for (const key in error.error.errors) {
                   if (error.error.errors[key]) {
-                    modalStateErros.push(error.error.errors)
+                    modalStateErros.push(error.error.errors[key])
                   }
                 }
-                throw modalStateErros;
+                throw modalStateErros.flat();
               } else {
                 this.toastr.error(error.statusText, error.status);
               }
