@@ -1,3 +1,4 @@
+using API.DTOs;
 using API.Entities;
 
 namespace API.Interfaces
@@ -10,5 +11,7 @@ namespace API.Interfaces
     Task<IEnumerable<Appuser>> GetUserAsync();
     Task<Appuser> GetUserByIdAsync(int id);
     Task<Appuser> GetUserByUsernameAsync(string username);
+    Task<IEnumerable<MemberDto>> GetMembersAsync();
+    Task<MemberDto> GetMemberAsync(string username);
   }
 }
