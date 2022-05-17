@@ -1266,6 +1266,13 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
+"@kolkov/ngx-gallery@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@kolkov/ngx-gallery/-/ngx-gallery-2.0.1.tgz#6c7903b4fc4719b093ef8a782aff731fe38ea320"
+  integrity sha512-mTigRy9Ha7bqCF/+GNKeW2Oe8ZILuM5GGMw+ZbvTQWq3X5hngeFFgv8GFG49Py3biX67kb0NhqCP+msLe4wbXQ==
+  dependencies:
+    tslib "^2.3.0"
+
 "@ngtools/webpack@12.2.16":
   version "12.2.16"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-12.2.16.tgz#262fe1f8e75453ff6bcb01693af4838737ce45f3"
